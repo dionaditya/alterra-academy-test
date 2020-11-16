@@ -10,9 +10,6 @@
 
 .sign-up__form__group {
   @apply flex flex-col w-full;
-}
-
-.sign-up__form__group {
   max-width: 422px;
 }
 
