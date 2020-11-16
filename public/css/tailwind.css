@@ -4,4 +4,7 @@
 @import "./custom";
 @import "tailwindcss/utilities";
 
-* {font-family: 'Roboto Light', 'Roboto Medium', 'Roboto', etc}
+/* apply roboto font */
+body {
+  font-family: "Roboto", sans-serif;
+}

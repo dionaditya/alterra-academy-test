@@ -6,14 +6,47 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="stylesheet" href="/build/tailwind.css" />
-  <title>Site title goes here</title>
-  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <title>Sign up form</title>
+  <!-- import roboto font -->
+  <link href="//fonts.googleapis.com/css?family=Roboto:500,700" rel="stylesheet" type="text/css">
 </head>
 <body class="antialiased font-sans">
   <!-- container -->
   <main class="sign-up">
     <!-- sign up form -->
     <section class="sign-up__form">
+      <form class="sign-up__form__group" id="sign-up=form"> 
+        <h5 class="sign-up__form__group__title">
+          sign up form
+        </h5>
+        <p class="sign-up__form__group__subtitle">
+          create a free account and get started
+        </p>
+        <input 
+          class="sign-up__form__group__input" 
+          type="email" 
+          placeholder="Email Address"
+          required>
+        </input>
+        <input 
+          class="sign-up__form__group__input"
+          type="password" 
+          placeholder="Password"
+          required>
+        </input>
+        <input 
+          class="sign-up__form__group__input"
+          type="password" 
+          placeholder="Retype password"
+          required>
+        </input>
+        <button
+          class="sign-up__form__group_submit"
+          type="submit"
+          form="sign-up-form">
+          sign up now
+        </button>
+      </form>
     </section>
     <!-- sign up banner -->
     <section class="sign-up__banner">

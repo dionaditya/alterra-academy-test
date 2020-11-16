@@ -1,16 +1,63 @@
-/* sample component */
+/* sign up container */
 .sign-up {
   @apply flex flex-col w-full min-h-screen bg-white-origin;
 }
 
+/* sign up form section */
 .sign-up__form {
   @apply flex-1 flex justify-center items-center;
 }
 
+.sign-up__form__group {
+  @apply flex flex-col w-full;
+}
+
+.sign-up__form__group {
+  max-width: 422px;
+}
+
+.sign-up__form__group__title {
+  @apply text-2xl;
+}
+
+.sign-up__form__group__title::first-letter {
+  text-transform: uppercase
+}
+
+.sign-up__form__group__subtitle {
+  @apply text-base;
+  margin-bottom: 40px;
+}
+
+.sign-up__form__group__subtitle::first-letter {
+  text-transform: uppercase;
+}
+
+.sign-up__form__group__input {
+  @apply w-full border-black text-black opacity-50 pt-2 pr-2 pl-2;
+  border: 1px solid;
+  padding-bottom: 19px;
+  height: 56px;
+  margin-bottom: 25px;
+}
+
+.sign-up__form__group__input::placeholder {
+  @apply text-base text-gray-md;
+}
+
+.sign-up__form__group_submit {
+  @apply bg-primary text-sm text-white-origin uppercase font-bold;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-weight: 700;
+}
+
+/* sign up form section */
 .sign-up__banner {
   @apply flex-1 bg-primary;
 }
 
+/* media queries for responsive design */
 @screen lg {
   .sign-up {
     @apply flex-row;
