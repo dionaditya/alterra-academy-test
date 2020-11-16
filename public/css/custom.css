@@ -25,7 +25,7 @@
 }
 
 .sign-up__form__group__subtitle {
-  @apply text-base;
+  @apply text-base text-gray-md;
   margin-bottom: 40px;
 }
 
@@ -54,12 +54,19 @@
 
 /* sign up form section */
 .sign-up__banner {
-  @apply flex-1 bg-primary;
+  @apply flex-1 bg-primary ;
+  background-image: url("../assets/image/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* media queries for responsive design */
 @screen lg {
   .sign-up {
     @apply flex-row;
+  }
+
+  .sign-up__banner {
+    background-size: 100% 100%;
   }
 }
