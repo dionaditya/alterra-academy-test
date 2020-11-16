@@ -1,0 +1,7 @@
+@import "tailwindcss/base";
+@import "./base";
+@import "tailwindcss/components";
+@import "./custom";
+@import "tailwindcss/utilities";
+
+* {font-family: 'Roboto Light', 'Roboto Medium', 'Roboto', etc}
