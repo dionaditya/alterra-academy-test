@@ -1,11 +1,12 @@
 /* sign up container */
 .sign-up {
-  @apply flex flex-col w-full min-h-screen bg-white-origin;
+  @apply flex flex-col-reverse w-full min-h-screen bg-white-origin;
 }
 
 /* sign up form section */
 .sign-up__form {
   @apply flex-1 flex justify-center items-center;
+  padding: 0px 16px;
 }
 
 .sign-up__form__group {
@@ -53,17 +54,25 @@
 .sign-up__banner {
   @apply flex-1 bg-primary ;
   background-image: url("../assets/image/banner.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size:  cover;                      /* <------ */
+  background-repeat:  no-repeat;
 }
 
-/* media queries for responsive design */
-@screen lg {
+@screen sm {
+  .sign-up__banner {
+    background-position: center center;
+  }
+}
+
+@screen md {
+  .sign-up__banner {
+    background-position: center center;
+  }
+}
+
+
+@screen xl {
   .sign-up {
     @apply flex-row;
-  }
-
-  .sign-up__banner {
-    background-size: 100% 100%;
   }
 }
